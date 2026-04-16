@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+function showFees(sectionId) {
+  const boxes = document.querySelectorAll('.fee-box');
+
+  boxes.forEach(box => {
+    box.style.display = 'none';
+  });
+
+  document.getElementById(sectionId).style.display = 'block';
+}
+</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kesar Shikshan Sansthan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+    <div class="logo-container">
+        <img src="images/logo.jpeg" alt="School Logo" class="logo-img">
+      <h2 class="logo">Kesar Shikshan Sansthan</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#academics">Fee Structure</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Kesar Shikshan Sansthan, Darauli</h1>
+      <p>We aim to provide a well disciplined environment to students, where they can rise completely.</p>
+       <p>Recognized by: Bihar School Examination Board | Registration Number: 21812422021914120135-2025-2026</p>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>The institution is running under the supervision of “Kesar Shikshan Sansthan Kesar Shikshan Sansthan (K.S.S.)” is a voluntary organisation which acts in the field of primary education. Since 1980 K.S.S. has been working in this field and has done laudable works for the primary section specially in rural areas of the district.
+       The aim of the academy is to provide a well disciplined educational environment to students where they can rise completely.
+       It is a complete residential school for boys and girls of class Nursery to std (IX). There is no seat for day scholars. Separate wards are provided for boys and girls, where rooms are allotted for two to three studen</p>
+    <h3>Our Vision</h3>
+    <p>We aim to develop children whose faces reflect hope, whose bodies possess strength, whose minds have strong willpower, whose lives embody self-reliance, and whose hearts are eager to gain knowledge. They should have respect for life, devotion toward family, loyalty toward the nation, and reverence for their ancestors.</p>
+      <h3>Our Aspiration</h3>
+    <p>A child, in seed form, is the manifestation of the Divine. With a pure and suitable environment, we aspire to nurture children with numerical and literacy skills along with good behavior, proper communication, morality, discipline in life, and values rooted in devotion. With this aspiration, we have moved forward on this noble path.</p>
+    <h3>OUR MOTTO</h3>
+    <p> 1. In the early period of divine recognition, the Sun was the first to be worshipped; therefore, the radiant sphere symbolizes the Sun.<br>
+        2. A burning lamp removes darkness and spreads light; meaning, may every person’s life be illuminated.<br>
+        3. The lotus is an auspicious symbol. Lord Brahma originated from the lotus, and Goddess Saraswati is seated on a white lotus.<br>
+        4. Work performed with truthfulness is the path to happiness and righteousness; such work itself is Dharma.<br>
+        5. Finally, all these symbols are inspired by national consciousness.<br>
+        We strive to provide you with the highest quality education that can make your personality self-reliant and dignified, strengthen your home with respect and support, and help unite society and the nation in harmony.</p>
+
+    <h3>Our Educational Objective</h3>
+    <p>The sole objective of the institution is to provide quality education through proficient and trained teachers in both Hindi and English medium, with the aim of character building.
+       Special attention is given to the complete development of children’s mental, physical, social, and spiritual abilities so that they become capable of contributing to their own welfare, the welfare of society, and humanity, and are able to lead healthy and meaningful lives.</p>
+    </p>
+    <h3>Our Commitment</h3>
+    <p>Children possess infinite potential for development. They are carriers of our cultural traditions and also the future leaders of the nation.
+       The best form of education is that which brings out the inherent abilities of children so they can distinguish between truth and falsehood, right and wrong, through their own capabilities.
+       Although development has no limits, the school is committed to equipping itself with the most modern educational systems for the purpose of personality development of students.
+    </p>
+    <h2>A message from our Director</h2>
+    <p>A child’s development is a dynamic process of overall growth that continues throughout life. In a child’s development, the role of parents is as important as that of the school because, under this broad concept of education, parents are also teachers of the child. Their influence holds a highly significant place in the child’s development because the child spends most of their time with them.</p>
+    </section>
+
+  <!-- Notice--> 
+    <section id="notice" class="selection">
+    <p>
+    📢 Provision of free education for 25% of economically weaker children under the Right to Education Act (Article 21A, 2009).<br>📢 School dress, Books, Notebooks and shoes are not provided in the school. You can buy these items from anywhere outside.</p>
+    </div>
+    </section>
+  <!--Facilities-->
+  <section id="facilities" class="section">
+    <h2>Facilities we Provide</h2>
+    <p>
+        <ul>
+            <li>Transport Facility on Demand.</li>
+            <li>First Aid Treatment.</li>
+            <li>24 x 7 CCTV Survelliance.</li>
+            <li>Based on CBSE pattern.</li>
+            <li>Trained, Qualified, Dedicated and Inspiring teachers.</li>
+            <li>Personal and Intensive care on slow learners.</li>
+            <li>Conducting and Encouraging students to participate for various competitions in all spheres.</li>
+            <li>Creating English atmosphere and providing Quality Education.</li>
+            <li>Indoor/Outdoor games.</li>
+            <li>Generator Facility.</li>
+        </ul>
+    </p>
+  </section>
+
+  <!-- Academics -->
+<section id="fees" class="section">
+  <h2>Fee Structure</h2>
+
+  <div class="fee-buttons">
+    <button onclick="showFees('primary')">Pre Primary Education</button>
+    <button onclick="showFees('secondary')">Primary Education</button>
+    <button onclick="showFees('higher')">Elimentary Education</button>
+  </div>
+
+  <div id="primary" class="fee-box">
+    <h3> Pre Primary Education</h3>
+    <p>Registration Fees: ₹850<br>
+    Monthly Fees: ₹600</p>
+  </div>
+
+  <div id="secondary" class="fee-box">
+    <h3>Primary Education</h3>
+    <p>Registration Fees: ₹850<br>
+    Monthly Fees: ₹600</p>
+  </div>
+
+  <div id="higher" class="fee-box">
+    <h3>Elimentary Education</h3>
+    <p>Registration Fees: ₹850<br>
+    Monthly Fees: ₹600</p>
+  </div>
+</section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images\4.jpeg" alt="Gallery Image">
+      <img src="images\3.jpeg" alt="Gallery Image">
+      <img src="images\2.jpeg" alt="Gallery Image">
+      <img src="images\1.jpeg" alt="Gallery Image">
+      <img src="images\5.jpeg" alt="Gallery Image">
+      <img src="images\6.jpeg" alt="Gallery Image">
+      <img src="images\7.jpeg" alt="Gallery Image">
+      <img src="images\8.jpeg" alt="Gallery Image">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Phone:
+  <a href="tel:+919876543210">+91 98765 43210</a>
+     </p>
+     <p>Email:
+  <a href="mailto:kssdarauli@gmail.com">kssdarauli@gmail.com</a>
+  <p>Postal Address: 84123, Mairwa Darauli Rd, Bihar 841234</p>
+    </p>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.512598571359!2d84.12737157511829!3d26.082180795288973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39925aec2eb73bd9%3A0x124c480d54d933cb!2sKESAR%20SHIKSHAN%20SANSTHAN!5e0!3m2!1sen!2sin!4v1776336421853!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+    </iframe>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    
+  <p>© 2026 Kesar Shikshan Sansthan. All Rights Reserved.</p>
+  <a href="privacy-policy.html">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>

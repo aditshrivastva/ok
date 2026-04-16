@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #e1821d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 20px 50px;
+  .logo-container {
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url('images/school-bg.jpeg') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+   p{
+  font-style: italic;}
+  
+
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  border: none;
+  background: #ffcc00;
+  cursor: pointer;
+  font-weight: bold;
+}
+#notice{
+  background-color: #b62613;   /* Background */
+  color: rgb(195, 188, 61);                /* Text color */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+#facilities{
+    text-align: left;
+}
+ .fee-box {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+ .fee-box {
+  display: none;
+}
+
+/* Sections */
+.section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 30px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* Contact */
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #002147;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #002147;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
