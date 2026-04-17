@@ -71,6 +71,17 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
+.li-content {
+  display: flex;
+  align-items: right;
+  gap: 20px;
+}
+
+.icon {
+  width: 80px;
+  height: 35px;
+}
+
 #notice{
   background-color: #b62613;   /* Background */
   color: rgb(195, 188, 61);                /* Text color */
